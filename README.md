@@ -1,8 +1,7 @@
 makesite.py
 ===========
-Take full control of your static website/blog generation by writing your
-own simple, lightweight, and magic-free static site generator in
-Python. That's right! Reinvent the wheel, fellas!
+The original author of this code described it as a "simple, lightweight, and magic-free static site generator in
+Python." Since I've modified it, any defects are probably my fault.
 
 [![View Source][SOURCE-BADGE]](makesite.py)
 [![View Demo][DEMO-BADGE]](https://tmug.github.io/makesite-demo)
