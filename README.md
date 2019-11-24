@@ -27,11 +27,10 @@ Contents
 
 Introduction
 ------------
-This repository contains the source code of a static site generator forked from https://github.com/sunainapai/makesite
-That's it!
+This repository contains the source code of a static site generator forked from https://github.com/sunainapai/makesite.
 
 You are [free](LICENSE.md) to copy, use, and modify this project for
-your blog or website, or some other purpose.
+your blog or website, or some other purpose, just as I have done.
 
 
 But Why?
@@ -46,8 +45,8 @@ The reader is advised to check out https://github.com/sunainapai/makesite
 The Code
 --------
 The source
-code is supposed to be self-explanatory but just in case you need a detailed
-overview of what it does (& don't want to click the preceding link for some reason):
+code is supposed to be self-explanatory, but just in case you need a detailed
+overview of what it does (& don't want to click the preceding link, or if that link went sour):
 
  1. The `main()` function is the starting point; it calls other functions to generate the website.
 
