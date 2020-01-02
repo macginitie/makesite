@@ -175,9 +175,9 @@ def main():
     # Default parameters.
     params = {
         'base_path': '',
-        'subtitle': 'Lorem Ipsum',
-        'author': 'Admin',
-        'site_url': 'http://localhost:8000',
+        'subtitle': 'Impus Morle',
+        'author': 'Madman',
+        'site_url': 'localhost/_site',
         'current_year': datetime.datetime.now().year
     }
 
@@ -207,21 +207,21 @@ def main():
     blog_posts = make_pages('content/blog/*.md',
                             '_site/blog/{{ slug }}/index.html',
                             post_layout, blog='blog', **params)
-    news_posts = make_pages('content/news/*.html',
-                            '_site/news/{{ slug }}/index.html',
-                            post_layout, blog='news', **params)
+    news_posts = make_pages('content/blues/*.html',
+                            '_site/blues/{{ slug }}/index.html',
+                            post_layout, blog='blues', **params)
 
     # Create blog list pages.
     make_list(blog_posts, '_site/blog/index.html',
               list_layout, item_layout, blog='blog', title='Blog', **params)
-    make_list(news_posts, '_site/news/index.html',
-              list_layout, item_layout, blog='news', title='News', **params)
+    make_list(news_posts, '_site/blues/index.html',
+              list_layout, item_layout, blog='blues', title='Blues', **params)
 
     # Create RSS feeds.
     make_list(blog_posts, '_site/blog/rss.xml',
               feed_xml, item_xml, blog='blog', title='Blog', **params)
-    make_list(news_posts, '_site/news/rss.xml',
-              feed_xml, item_xml, blog='news', title='News', **params)
+    make_list(news_posts, '_site/blues/rss.xml',
+              feed_xml, item_xml, blog='blues', title='Blues', **params)
 
 
 # Test parameter to be set temporarily by unit tests.
